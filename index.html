@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="resources/estilo.css">
+    <title>Service</title>
+</head>
+
+<body>
+    <h1>Datos Equipos</h1>
+    <div class="row">
+        <div class="col l5 offset-l1 s12">
+            <table class="responsive-table" id="tablaEquipos">
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Descripción</th>
+                        <th>Horas</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se agregarán las filas dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col l3 s12">
+           <div class="col l3 offset-l12">
+            <form id="entraForm" action="">
+                <div>
+                    <div>
+                        <span>Tipo</span>
+                        <label>
+                            <input class="with-gap" id="entraTipoDiesel" type="radio" name="tipoEquipo" value="Diesel" checked />
+                            <span>Diesel</span>
+                        </label>
+                        <label>
+                            <input class="with-gap" id="entraTipoGas" type="radio" name="tipoEquipo" value="Gas" />
+                            <span>Gas</span>
+                        </label>
+                    </div>
+                    
+              </div>
+            </div>
+              
+            <div class="input-field col s6">
+                <label for="entraDescrip">Descripción</label>
+                <input type="text" class="validate" id="entraDescrip" name="entraDescrip">
+            </div>
+            
+            <div class="input-field col s6">
+              <label for="entraHoras">Horas</label>
+              <input type="number" class="validate" id="entraHoras" name="entraHoras">
+            </div>
+            
+            <button id="Guardar" class="waves-effect waves-light btn" >Guardar</button>
+            </form>
+        </div>
+    </div>
+
+
+    <h2>Revision de Equipos</h2>
+    <div class="col l3 s12">
+        <div class="col l3 offset-l12">
+         <form id="entraForm2" action="">
+             <div>
+                 <div>
+                     <span>Tipo</span>
+                     <label>
+                         <input class="with-gap" id="entraTipoDiesel2" type="radio" name="tipoEquipo2" value="Diesel" checked />
+                         <span>Diesel</span>
+                     </label>
+                     <label>
+                         <input class="with-gap" id="entraTipoGas2" type="radio" name="tipoEquipo2" value="Gas" />
+                         <span>Gas</span>
+                     </label>
+                 </div>
+                 
+           </div>
+         </div>
+           
+         <div class="input-field col s6">
+             <label for="entraDescrip2">Descripción</label>
+             <input type="text" class="validate" id="entraDescrip2" name="entraDescrip2">
+         </div>
+         
+         <div class="input-field col s6">
+           <label for="entraHoras2">Horas Actuales</label>
+           <input type="number" class="validate" id="entraHoras2" name="entraHoras2">
+         </div>
+         
+         <button type="submit" class="waves-effect waves-light btn" >Horas p/ Service</button>
+         </form>
+     </div>
+ </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="resources/scripts.js"></script>
+
+</body>
+</html>
