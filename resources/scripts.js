@@ -98,7 +98,7 @@ document.getElementById("entraForm2").addEventListener("submit", function(event)
         const horasUsuario = parseInt(document.getElementById("entraHoras2").value);
         const diferencia = horasEquipo - horasUsuario;
 
-        alert(`Faltan ${diferencia} para realizar Service`);
+        alert(`Faltan ${diferencia} horas para realizar Service`);
       }
     });
   }
