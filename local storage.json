@@ -1,0 +1,32 @@
+[
+    {
+        "tipo": "Gas",
+        "descripcion": "100kva",
+        "horas": "123"
+    },
+    {
+        "tipo": "Diesel",
+        "descripcion": "310 kva",
+        "horas": "359"
+    },
+    {
+        "tipo": "Diesel",
+        "descripcion": "500 kva",
+        "horas": "402"
+    },
+    {
+        "tipo": "Gas",
+        "descripcion": "85 kva",
+        "horas": "255"
+    },
+    {
+        "tipo": "Diesel",
+        "descripcion": "135 kva",
+        "horas": "398"
+    },
+    {
+        "tipo": "Diesel",
+        "descripcion": "400 kva",
+        "horas": "356"
+    }
+]
