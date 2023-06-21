@@ -96,13 +96,10 @@ document.getElementById("entraForm2").addEventListener("submit", function(event)
       if (equipo.descripcion === descripcionUsuario) {
         const horasEquipo = parseInt(equipo.horas);
         const horasUsuario = parseInt(document.getElementById("entraHoras2").value);
-        const horasService = (horasEquipo + horasUsuario);
-        
-      
-        alert(`Horas en total ${horasService}`);
-      }
-    });
-  }
-});
+        const sumaHoras = (horasEquipo + horasUsuario);
 
-   
+            alert(`Horas en total ${sumaHoras}`);
+          }
+        }
+     )}
+   });
