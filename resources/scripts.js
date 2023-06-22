@@ -57,6 +57,13 @@ function actualizarTablaEquipos() {
     const columnaHoras = document.createElement("td");
     columnaHoras.textContent = equipo.horas;
 
+    const columnaService = document.createElement("td");
+    const botonService = document.createElement("button");
+    botonService.textContent = "Service";
+    botonService.addEventListener("click", () => {
+      serviceEquipo(index)
+    });
+      
     const columnaEliminar = document.createElement("td");
     const botonEliminar = document.createElement("button");
     botonEliminar.textContent = "Eliminar";
@@ -72,6 +79,16 @@ function actualizarTablaEquipos() {
     fila.appendChild(columnaEliminar);
 
     tbody.appendChild(fila);
+
+    columnaService.appendChild(botonService);
+
+    fila.appendChild(columnaTipo);
+    fila.appendChild(columnaDescripcion);
+    fila.appendChild(columnaHoras);
+    fila.appendChild(columnaEliminar);
+    fila.appendChild(columnaService);
+
+    tbody.appendChild(fila);
   });
 }
 
@@ -80,6 +97,11 @@ function eliminarEquipo(index) {
   equipos.splice(index, 1);
   localStorage.setItem("Equipos", JSON.stringify(equipos));
   actualizarTablaEquipos();
+}
+
+
+function serviceEquipo(index) {
+  
 }
 
 
@@ -97,9 +119,11 @@ document.getElementById("entraForm2").addEventListener("submit", function(event)
         const horasEquipo = parseInt(equipo.horas);
         const horasUsuario = parseInt(document.getElementById("entraHoras2").value);
         const sumaHoras = (horasEquipo + horasUsuario);
-
-            alert(`Horas en total ${sumaHoras}`);
-          }
-        }
-     )}
-   });
+        const faltantesHoras = (horasEquipo - horasUsuario)
+        if (Number(sumaHoras) > 400){
+            alert("Hacer service, las horas pasaron los 400");
+       } 
+      }
+     });
+    }
+  });
