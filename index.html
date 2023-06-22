@@ -88,7 +88,7 @@
              </div>
     
                <div class="col s6 offset-s6">
-                <div class="input-field col s6">
+                <div class="input-field col s8">
                     <label for="entraDescrip2">Descripción</label>
                     <input type="text" class="validate" id="entraDescrip2" name="entraDescrip2">
                 </div>
@@ -96,7 +96,7 @@
              
             
              <div  class="col s6 offset-s6">
-                <div class="input-field col s6">
+                <div class="input-field col s8">
                     <label for="entraHoras2">Horas Actuales</label>
                     <input type="number" class="validate" id="entraHoras2" name="entraHoras2">
                   </div>
@@ -108,10 +108,18 @@
          </div>
     </div>
 
-    
 
  </div>
 
+ <div class="col l4 offset-l8">
+    <button class="waves-effect waves-light btn" id="generar-pdf">Generar Remito</button>
+ </div>
+ 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/pdfmake.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/vfs_fonts.js"></script>
+ 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -128,7 +136,7 @@
         <div class="container">
           <div class="row">
             <div class="col l6 s12">
-              <h5 class="white-text">Footer Content</h5>
+              <h5 class="white-text">GEA SRL</h5>
               <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
             </div>
             <div class="col l4 offset-l2 s12">

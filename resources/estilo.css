@@ -13,4 +13,7 @@ body {
   main {
     flex: 1 0 auto;
   }
-   
+
+.generar-pdf{
+  margin-top: 15%
+}
